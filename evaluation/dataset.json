@@ -1,0 +1,18 @@
+{
+  "description": "Small deterministic retrieval set for the educational transcript demo.",
+  "transcript": [
+    {"chunk_id": "intro", "start_seconds": 0, "end_seconds": 32, "text": "The lesson introduces supervised learning, where labeled examples teach a model to map inputs to known outputs."},
+    {"chunk_id": "gradient", "start_seconds": 84, "end_seconds": 126, "text": "Gradient descent reduces a loss function by updating model weights in the direction of the negative gradient."},
+    {"chunk_id": "learning_rate", "start_seconds": 127, "end_seconds": 166, "text": "The learning rate controls the size of each gradient descent step; a step that is too large can overshoot the minimum."},
+    {"chunk_id": "overfitting", "start_seconds": 245, "end_seconds": 288, "text": "Overfitting happens when a model memorizes training examples and performs poorly on unseen validation data."},
+    {"chunk_id": "convolution", "start_seconds": 410, "end_seconds": 463, "text": "A convolutional neural network applies learned filters over small image regions to detect features such as edges."},
+    {"chunk_id": "regularization", "start_seconds": 520, "end_seconds": 556, "text": "Regularization discourages unnecessarily complex models; dropout randomly disables units during training."}
+  ],
+  "questions": [
+    {"question": "How does gradient descent lower the loss?", "relevant_chunk_id": "gradient", "expected_start_seconds": 84},
+    {"question": "What happens if the learning rate step is too large?", "relevant_chunk_id": "learning_rate", "expected_start_seconds": 127},
+    {"question": "Why does a model fail on validation examples after memorizing training data?", "relevant_chunk_id": "overfitting", "expected_start_seconds": 245},
+    {"question": "How do CNN filters process image regions?", "relevant_chunk_id": "convolution", "expected_start_seconds": 410},
+    {"question": "What does dropout do during training?", "relevant_chunk_id": "regularization", "expected_start_seconds": 520}
+  ]
+}
